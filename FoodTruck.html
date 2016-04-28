@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Truck Order Form</title>
+<link href="css/stylesheet.css" type="text/css" rel="stylesheet" />
+
+<script>
+
+//count each subtotal
+//storing all prices
+var quantity = 'input()'; //let customer select a number
+var frankdog_price = 5.5;
+//var pork_price = 7;
+var frankdog_subtotal = frankdog_price * quantity;
+//var pork_subtotal = $pork_price * $quantiy;
+
+
+
+var elsubtotal = document.getElementById(frankdog);
+elsubtotal.textContent = frankdog_subtotal;
+//count total 
+
+</script>
+</head>
+<body> <!-- checks for cookies here -->
+
+    <img src="img/food-truck.jpg">
+    
+    <div id="welcome">
+     <h1>Welcome to &#9832; Yummy</h1>
+     <h1>Food Truck</h1>
+       </div>    
+
+<table>
+<tr>
+<td width="35%" align="center" style="color:green">Item Name</td>
+<td width="18%" align="left" style="color:green">Price</td>
+<td width="22%" align="left" style="color:green">Quantity</td>
+<td width="35%" align="left" style="color:green">Subtotal</td>
+</tr>
+
+<tr>
+<td>FRANK HOT DOG</td>
+<td>$ 5.50</td>
+<td><input type="number" name="quantity" min="0"></td>
+<td><input type="tel"><span id="frankdog"></span></td>
+</tr>
+
+<tr>
+<td>PORK</td>
+<td>$ 7.00</td>
+<td><input type="number" name="quantity" min="1" ></td>
+<td><input type="tel" <?php echo $pork_subtotal; ?> </td>
+</tr>
+
+<tr>
+<td>CHICKEN</td>
+<td>$ 10.50</td>
+<td><input type="number" name="quantity" min="1"></td>
+<td><input type="tel" ></td>
+</tr>
+
+<tr>
+<td>BRISKET</td>
+<td>$ 6.50</td>
+<td><input type="number" name="quantity" min="1"></td>
+<td><input type="tel" ></td>
+</tr>
+
+<tr>
+<td>RIBS</td>
+<td>$ 8.50</td>
+<td><input type="number" name="quantity" min="1" ></td>
+<td><input type="tel" ></td>
+</tr>
+
+<tr>
+<td style="color:green">Total Selected Items</td>
+<td><input type="tel"  width="45%" align="right"></td>
+<td width="26%" align="left" style="color:green">Total Charge</td>
+<td ><input type="tel" width="60%" align="right"></td>
+</tr>
+
+<tr>
+<td style="color:green">Payment Method</td>
+<td><label><a href="#"><input type="button" name="Visa" value="Visa" width="60" ></a></label></td>
+<td><label><a href="#"><input type="button" name="Master" value="Master" width="60" ></a></label></td>
+<td><label><a href="#"><input type="button" name="Cash" value="Cash" width="60" ></a></label></td>
+</tr>
+
+<tr>
+<td><label><a href="#"><input type="button" name="Submit" value="Check Out" ></a></label></td>
+<td></td>
+<td></td>
+<td></td>
+
+</tr>
+
+</table>
+
+   
+</body>
+</html>
